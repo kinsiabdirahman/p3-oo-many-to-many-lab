@@ -87,4 +87,10 @@ class Contract:
     @classmethod
     def contracts_by_date(cls, date):
         return [contract for contract in cls.all if contract.date == date]
+    
+
+    # def contracts_by_date(cls, date):
+    #     contracts = [contract for contract in cls.all if contract.date == date]
+    #     sorted_contracts = sorted(contracts, key=lambda x: datetime.strptime(x.date, "%m/%d/%Y"))
+    #     return sorted_contracts
         
